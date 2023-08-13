@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Music website</title>
+	<link rel="stylesheet" type="text/css" href="song.css">
+</head>
+<body>
+     <div class="container">
+     	<div class="navbar">
+     		<img src="slow.png" class="logo"><br>
+     		<ul>
+     			<li><a href="#"><h3>HOME<h3></a></li>
+     			<li><a href="#"><h3>ABOUT</h3></a></li>
+     			<li><a href="#"><h3>PRODUCT</h3></a></li>
+     			<li><a href="#"><h3>CONNECT</h3></a></li>
+     			<li><a href="#"><h3>ACCOUNT</h3></a></li>
+     		</ul>
+     	</div>	
+     	<div class="content">
+     	    <div class="left-col">
+     	    	<h1>MuSiCfY</h1>
+     	    </div>
+     	    <div class="right-col">
+     	        <p>Click here to listen</p>
+                <img src="play.png" id="icon">
+                <img src ="next.png" id="icon2">
+     	    </div>
+         </div>
+     	        	
+
+    </div>
+    <audio id="mysong">
+    	<source src="song.mp3" type="audio/mp3">
+    </audio>
+    <audio id ="mysong2">
+        <source src="song2.mp3" type"audio/mp3">
+    </audio>        
+    
+<script> 
+        var mysong = document.getElementById("mysong");
+        var icon= document.getElementById("icon");
+
+        icon.onclick=function(){
+        	if(mysong.paused){
+                mysong.play();
+                icon.src="pause.png";
+            }else{
+                mysong.pause();
+                icon.src="play.png";
+            }
+        var mysong2 = document.getElementById("mysong2");
+        var icon2=document.getElementById("icon2");
+
+        icon2.onclick=function(){
+            if(mysong2.paused){
+                mysong2.play();
+                icon2.src="next.png";
+            }else{
+                mysong2.pause();
+                icon2.src="play.png"
+            }
+            
+        }
+    }
+</script>  
+<div class ="harsh">
+    <p> kesariya</p>
+ <footer id="main-bar">
+ <p>Copyright &copy;2022 designed by harsh tripathi</p>        		
+</body>
+</html>     	
+

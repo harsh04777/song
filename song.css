@@ -1,0 +1,82 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: tahoma;
+}
+.container{
+	height:100vh;
+	width:100%;
+	background-image:url('../song web/lofi.jpg');
+	background-size: cover;
+	background-position: center;
+	position:relative;
+
+}
+.navbar{
+	width:89%;
+	margin:auto;
+	padding:15px 0;
+	display:flex;
+	align-items: center;
+	justify-content:space-between;
+}
+.logo{
+	width:140px;
+	cursor:pointer;
+
+}
+.navbar ul li{
+	list-style:none;
+	display:inline-block;
+	margin:0 15px;
+
+}
+.navbar ul li a{
+	text-decoration:none;
+	color:white;
+	font-size:15px;
+}
+.content{
+	width:100%;
+	position:absolute;
+	
+	top:30%;
+}
+.left-col{
+	margin-left:6%;
+}	
+.left-col h1{
+	font-size:50px;
+	color:pink;
+	float:left;
+
+}
+.right-col{
+	float:right;
+	margin-right:6%;
+	margin-top:100px;
+	display:flex;
+	align-items:center;
+
+}
+.right-col p{
+	color:white;
+	font-size:20px;
+}
+#icon{
+	width:80px;
+	cursor:pointer;
+}
+#icon2{
+	width:60px;
+	cursor:pointer;
+}
+#main-bar{
+	background-color: black;
+	padding:10px ;
+}
+#main-bar p {
+	color:white;
+	text-align:center;
+	
+}
